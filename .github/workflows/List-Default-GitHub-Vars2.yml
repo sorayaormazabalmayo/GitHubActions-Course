@@ -1,0 +1,21 @@
+name: 'List all default GitHub Vars'
+
+on: workflow_dispatch
+
+jobs: 
+    mainjob:
+        name: 'Print the Default GitHub vars'
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: 'print-values-of-env-vars'
+          run: |
+            echo "$GITHUB_ACTION"
+            echo "$GITHUB_ENV"
+            echo "$GITHUB_API_URL"
+            echo "$GITHUB_JOB"
+            echo "$GITHUB PATH"
+            echo "$GITHUB_STEP_SUMMARY"
+            echo "$RUNNER_NAME"
+
+
