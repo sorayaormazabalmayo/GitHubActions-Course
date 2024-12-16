@@ -24,6 +24,5 @@ jobs:
         echo "testvar ${{ env.testvar}}"
       env: 
         First_Name: Student
-        testvar: value-3
 
       ## These variables can only be used in the same job. 
